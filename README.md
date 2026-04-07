@@ -22,5 +22,5 @@ open index.html
 ```
 
 ---
-Built by Monalisa Dokania
+Built by Monalisa Dokania. All code and implementation are original.
 Design inspired by brittanychiang.com. 
