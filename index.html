@@ -4,21 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Monalisa Dokania — Software Engineer</title>
-  <meta name="description" content="Founding Software Engineer specializing in full-stack development, distributed systems, and agentic AI." />
+  <meta name="description" content="Software Engineer specializing in distributed systems, cloud infrastructure, and agentic AI." />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;1,14..32,300&display=swap" rel="stylesheet" />
-
-  <!-- <style>
-
-  </style> -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
   <!-- ══ NAV ═══════════════════════════════════════════════ -->
   <nav id="navbar">
-    <div class="nav-logo"><a href="#">MD</a></div>
+    <div class="nav-logo">
+      <span class="logo-prompt">~/</span><a href="#">md</a>
+    </div>
     <ol class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
@@ -26,10 +24,10 @@
       <li><a href="#writing">Writing</a></li>
       <li><a href="#contact">Contact</a></li>
     </ol>
-    <a class="nav-resume" href="Resume_Monalisa_Dokania.pdf" target="_blank">Resume</a>
+    <a class="nav-resume" href="Resume_Monalisa_Dokania.pdf" target="_blank">Resume ↗</a>
   </nav>
 
-  <!-- ══ LEFT SIDEBAR ═══════════════════════════════════════ -->
+  <!-- ══ SIDE SOCIAL ════════════════════════════════════════ -->
   <div class="side side-left">
     <ul class="side-icons">
       <li>
@@ -50,7 +48,6 @@
     </ul>
   </div>
 
-  <!-- ══ RIGHT SIDEBAR ══════════════════════════════════════ -->
   <div class="side side-right">
     <div class="side-email">
       <a href="mailto:msdokania@gmail.com">msdokania@gmail.com</a>
@@ -60,56 +57,95 @@
   <!-- ══ MAIN ═══════════════════════════════════════════════ -->
   <main>
 
-    <!-- ── HERO ─────────────────────────────────────────── -->
+    <!-- ── HERO ──────────────────────────────────────────── -->
     <section id="hero">
-      <p class="hero-greeting hero-line">Hi, my name is</p>
+      <p class="hero-greeting hero-line">
+        <span class="prompt">$</span> Hi, my name is
+      </p>
       <h1 class="hero-name hero-line">Monalisa Dokania.</h1>
-      <!-- <h2 class="hero-tagline hero-line">I build distributed systems &amp; agentic AI.</h2> -->
+      <h2 class="hero-tagline hero-line">I build systems that scale.</h2>
       <p class="hero-desc hero-line">
-        I'm a Software engineer specializing in production-grade distributed systems, cloud infrastructure, and AI agents.
-        Currently building backend and infrastructure at <a href="#experience">BLUSVN Technologies</a>
-        as a founding engineer. <!--a href="#writing"></a-->
+        Software engineer focused on production-grade distributed systems, cloud infrastructure,
+        and AI agents. Currently building backend and infrastructure at
+        <a href="#experience">BLUSVN Technologies</a> as a founding engineer.
       </p>
       <div class="hero-cta hero-line">
-        <a class="btn btn-outline-green" href="#projects">See my work</a>
-        <a class="btn btn-outline-slate" href="#contact">Get in touch</a>
+        <a class="btn btn-primary" href="#projects">See my work</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
       </div>
     </section>
 
-    <!-- ── ABOUT ─────────────────────────────────────────── -->
+    <!-- ── ABOUT ──────────────────────────────────────────── -->
     <section id="about">
       <h2 class="section-heading reveal">About Me</h2>
       <div class="about-grid reveal">
 
         <div class="about-text">
           <p>
-            I'm Monalisa — a software engineer with experience building systems that are fast, reliable,
-            and thoughtfully designed. I hold an <strong>M.S. in Computer Science
-            from Arizona State University with a 4.0 GPA</strong>.
+            I'm a software engineer with experience building systems that are fast, reliable,
+            and thoughtfully designed. I hold an <strong>M.S. in Computer Science from Arizona
+            State University</strong> with a 4.0 GPA.
           </p>
           <p>
-            As a founding engineer at <a href="https://blusvn.com" target="_blank">BLUSVN Technologies</a>, 
+            As a founding engineer at <a href="https://blusvn.com" target="_blank">BLUSVN Technologies</a>,
             I've owned the full product lifecycle — from architecture decisions to deployment — on a platform
-             processing thousands of orders per second.
+            processing thousands of orders per second.
           </p>
           <p>
-            Alongside systems engineering, I've been building AI agents from first principles — understanding the
-             raw mechanics of agents. That work spans multi-agent pipelines, RAG systems, real-time web search, 
-             and multimodal inputs.
+            Alongside systems engineering, I've been building AI agents from first principles.
+            That work spans multi-agent pipelines, RAG systems, tools integration, and multimodal inputs —
+            all documented publicly as I go.
           </p>
-          <p>Technologies I work with most often:</p>
-          <ul class="skills-grid">
-            <li>Python / Go / TypeScript</li>
-            <li>AWS / Kubernetes / Terraform</li>
-            <li>LangChain / LangGraph / RAG</li>
-            <li>OpenAI / Vector DBs / Pydantic</li>
-            <li>React / Node.js / FastAPI</li>
-            <li>PostgreSQL / Redis / Kafka</li>
-          </ul>
+
+          <div class="skills-terminal">
+            <div class="terminal-bar">
+              <span class="t-dot t-red"></span>
+              <span class="t-dot t-yellow"></span>
+              <span class="t-dot t-green"></span>
+              <span class="t-title">Technologies I work with</span>
+            </div>
+            <div class="terminal-body">
+              <div class="t-line">
+                <span class="t-prompt">$</span>
+                <span class="t-cmd">cat skills.txt</span>
+              </div>
+              <div class="t-section">
+                <span class="t-key">languages</span>
+                <span class="t-val">Python · Go · TypeScript · Java</span>
+              </div>
+              <div class="t-section">
+                <span class="t-key">infra    </span>
+                <span class="t-val">AWS · Kubernetes · Terraform · Docker</span>
+              </div>
+              <div class="t-section">
+                <span class="t-key">ai/ml    </span>
+                <span class="t-val">LangChain · LangGraph · RAG · OpenAI · ML models</span>
+              </div>
+              <div class="t-section">
+                <span class="t-key">backend  </span>
+                <span class="t-val">Kafka · PostgreSQL · Redis · FastAPI · tRPC</span>
+              </div>
+              <div class="t-section">
+                <span class="t-key">frontend </span>
+                <span class="t-val">React · Vite · Node.js</span>
+              </div>
+              <div class="t-line t-cursor-line">
+                <span class="t-prompt">$</span>
+                <span class="t-cursor">▋</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="about-photo">
+          <!--
+            TO ADD YOUR PHOTO:
+            1. Upload photo.jpg to the repo
+            2. Replace <div class="photo-placeholder"> with:
+                  <img class="photo-img" src="photo.jpg" alt="Monalisa Dokania" />
+          -->
           <a class="photo-frame" href="#">
+            <!-- <div class="photo-placeholder"> -->
             <img class="photo-img" src="photo.jpg" alt="Monalisa Dokania" />
               <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
               <!-- <span>// photo.jpg</span> -->
@@ -121,297 +157,282 @@
       </div>
     </section>
 
-    <!-- ── EXPERIENCE ────────────────────────────────────── -->
+    <!-- ── EXPERIENCE ──────────────────────────────────────── -->
     <section id="experience">
-      <h2 class="section-heading reveal">Where I've Worked</h2>
+      <h2 class="section-heading reveal">Experience</h2>
       <div class="exp-layout reveal">
-
         <ul class="exp-tab-list" role="tablist">
-          <li><button class="exp-tab active" role="tab" data-panel="blusvn">BLUSVN</button></li>
-          <li><button class="exp-tab" role="tab" data-panel="asu">ASU</button></li>
+          <li><button class="exp-tab active" data-panel="blusvn">BLUSVN</button></li>
+          <li><button class="exp-tab" data-panel="asu">ASU</button></li>
         </ul>
-
         <div class="exp-panels">
 
           <div class="exp-panel active" id="panel-blusvn">
-            <p class="exp-panel-title">
-              Software Engineer <span class="at">@</span>
-              <a href="https://blusvn.com" target="_blank">BLUSVN Technologies</a>
-            </p>
-            <p class="exp-meta">June 2024 – Present &nbsp;·&nbsp; Scottsdale, AZ</p>
+            <p class="exp-title">Software Engineer <span class="at">@</span> <a href="https://blusvn.com" target="_blank">BLUSVN Technologies</a></p>
+            <p class="exp-meta">June 2024 – Present · Scottsdale, AZ</p>
             <ul class="exp-list">
-              <li>Founding (Lead) engineer on a distributed water-delivery platform. Owned the full product lifecycle — design through production deployment.</li>
+              <li>Founding (lead) engineer on a distributed water-delivery platform — owned the full product lifecycle from architecture through production.</li>
               <li>Worked alongside stakeholders and product managers to <strong>architect technical solutions</strong> to fulfill business requirements.</li>
-              <li>Designed and shipped <strong>80+ backend APIs</strong> (TypeScript/tRPC + PostgreSQL), reducing end-to-end latency by <strong>40%</strong>.</li>
-              <li>Engineered high-performance <strong>Golang microservices</strong> - <strong>50K orders/min</strong>.</li>
-              <li>Built and managed AWS infrastructure for optimized performance; Reduced high-severity CVEs by <strong>20%</strong> & improved cluster compliance from 65% to 76%</li>
-              <li>Built <strong>Kafka-based event-driven</strong> location workflows for real-time processing.</li>
-              <li>Built Python <strong>load testing suite</strong> (Locust) with Prometheus + Grafana monitoring for bottleneck analysis.</li>
-              <li>Collaborated with engineers and provided leadership as technical lead, coordinating code reviews and sprints.</li>
+              <li>Architected and shipped <strong>80+ backend APIs</strong> (TypeScript/tRPC + PostgreSQL), reducing end-to-end latency by <strong>40%</strong>.</li>
+              <li>Engineered high-performance <strong>Golang microservices</strong> with concurrent worker pools — <strong>50K orders/min</strong> at peak load.</li>
+              <li>Built and optimized AWS/EKS infrastructure with Terraform; Reduced high-severity CVEs by <strong>20%</strong>, cluster compliance 65% → <strong>76%</strong>.</li>
+              <li>Built <strong>Kafka-based event-driven</strong> location workflows for real-time tracking.</li>
+              <li>Built Python <strong>load-testing suite</strong> (Locust) with Prometheus + Grafana dashboards.</li>
             </ul>
             <div class="exp-tags">
-              <span>TypeScript</span><span>Python</span><span>Go</span><span>ML Inference</span><span>AI workflow</span><span>Kubernetes</span>
-              <span>Kafka</span><span>AWS</span><span>Terraform</span><span>React</span><span>tRPC</span><span>PostgreSQL</span><span>Redis</span>
+              <span>Go</span><span>TypeScript</span><span>Python</span><span>Kubernetes</span><span>Kafka</span><span>AWS</span>
+              <span>AI/ML workflow</span><span>Terraform</span><span>React</span><span>tRPC</span><span>PostgreSQL</span><span>Redis</span>
             </div>
           </div>
 
           <div class="exp-panel" id="panel-asu">
-            <p class="exp-panel-title">
-              Graduate Teaching Assistant <span class="at">@</span>
-              <a href="https://scai.engineering.asu.edu" target="_blank">Arizona State University</a>
-            </p>
-            <p class="exp-meta">May 2023 – May 2024 &nbsp;·&nbsp; Tempe, AZ</p>
+            <p class="exp-title">Graduate Teaching Assistant <span class="at">@</span> <a href="https://scai.engineering.asu.edu" target="_blank">Arizona State University</a></p>
+            <p class="exp-meta">May 2023 – May 2024 · Tempe, AZ</p>
             <ul class="exp-list">
-              <li>Software Verification, Validation &amp; Testing - Supported classes totaling <strong>900+ students</strong>.</li>
+              <li>Supported Software Verification, Validation &amp; Testing — <strong>totalling 900+ students.</strong></li>
               <li>Guided students in unit testing, debugging, code reviews, software reliability, and OOP design principles.</li>
-              <li>Led lab sessions and office hours; developed course materials and grading rubrics</li>
+              <li>Led lab sessions, office hours; developed course materials and grading rubrics.</li>
             </ul>
+            <div class="exp-tags">
+              <span>Software Testing</span><span>Java</span><span>Python</span><span>OOP</span><span>Code Review</span>
+            </div>
           </div>
 
         </div>
       </div>
     </section>
 
-    <!-- ── FEATURED PROJECTS ──────────────────────────────── -->
+    <!-- ── PROJECTS ────────────────────────────────────────── -->
     <section id="projects">
-      <h2 class="section-heading reveal">Some Things I've Built</h2>
-      <ul class="featured-list">
+      <h2 class="section-heading reveal">Projects</h2>
 
-        <!-- ─ Project 1 ─────────────────────────────────── -->
-        <li class="featured-item reveal">
-          <div class="feat-text">
-            <p class="feat-label">Featured Project</p>
-            <h3 class="feat-title">Multi-Agent LLM Pipeline<br>for Document &amp; Log Analysis</h3>
-            <div class="feat-desc">
+      <!-- ─ Featured: full showcase cards ─────────────────── -->
+      <div class="showcase-list">
+
+        <!-- Project 1 -->
+        <article class="showcase-card reveal">
+          <!--
+            ════ HOW TO ADD A SCREENSHOT OR GIF ════
+            Replace <div class="showcase-img-placeholder"> with:
+
+                <img class="showcase-img" src="demo.gif" alt="Project demo" />
+              or
+                <img class="showcase-img" src="screenshot.png" alt="Screenshot" />
+
+            Recommended: 1200×675px (16:9) or any wider-than-tall image.
+            GIFs work great here — they autoplay inline.
+          -->
+          <div class="showcase-media">
+            <div class="showcase-img-placeholder">
+              <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              <!-- <span>Add screenshot or GIF here</span> -->
+              <!-- <code>replace this div with &lt;img class="showcase-img" src="demo.gif" /&gt;</code> -->
+            </div>
+          </div>
+          <div class="showcase-info">
+            <div class="showcase-meta">
+              <span class="showcase-tag-featured">Featured</span>
+              <div class="showcase-links">
+                <a href="https://github.com/msdokania/agentic-analysis-platform" target="_blank" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="showcase-name">Multi-Agent LLM Pipeline</h3>
+            <p class="showcase-sub">Document &amp; Log Analysis</p>
+            <p class="showcase-desc">
               A custom five-stage agent pipeline (Planner → Retriever → Analyst → Critic → Reporter)
-              for structured, evidence-backed document and log analysis. Implements a full RAG workflow
-              with semantic retrieval over a Qdrant vector store, async large-PDF processing via Redis RQ,
-              confidence scoring, and measurably fewer hallucinations vs single-prompt approaches.
-            </div>
-            <ul class="feat-tech">
-              <li>Python</li><li>LangChain</li><li>FastAPI</li><li>Redis RQ</li><li>Qdrant</li><li>OpenAI</li>
-            </ul>
-            <div class="feat-links">
-              <a href="https://github.com/msdokania/agentic-analysis-platform" target="_blank" aria-label="GitHub">
-                <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              </a>
+              for structured, evidence-backed document and log analysis. Full RAG workflow with semantic
+              retrieval over Qdrant, async PDF processing via Redis RQ, confidence scoring, and
+              measurably fewer hallucinations than single-prompt approaches.
+            </p>
+            <div class="showcase-tech">
+              <span>Python</span><span>LangChain</span><span>FastAPI</span>
+              <span>Redis RQ</span><span>Qdrant</span><span>OpenAI</span>
             </div>
           </div>
+        </article>
 
-          <!-- ADD IMAGE/GIF: replace the placeholder block below with
-               <div class="feat-media">
-                 <img class="feat-media-img" src="multi-agent-demo.gif" alt="Multi-agent pipeline demo" />
-               </div>                                                     -->
-          <div class="feat-media">
-            <div class="feat-media-placeholder">
-              <div class="feat-media-placeholder-inner">
-                <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-                <!-- screenshot / gif -->
+        <!-- Project 2 -->
+        <article class="showcase-card reveal">
+          <div class="showcase-media">
+            <div class="showcase-img-placeholder">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <!-- <span>Add screenshot or GIF here</span> -->
+              <!-- <code>replace this div with &lt;img class="showcase-img" src="demo.gif" /&gt;</code> -->
+            </div>
+          </div>
+          <div class="showcase-info">
+            <div class="showcase-meta">
+              <span class="showcase-tag-featured">Featured</span>
+              <div class="showcase-links">
+                <a href="https://github.com/msdokania/agentic-ai-series" target="_blank" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
               </div>
             </div>
-          </div>
-        </li>
-
-        <!-- ─ Project 2 ─────────────────────────────────── -->
-        <li class="featured-item reveal">
-          <div class="feat-text">
-            <p class="feat-label">Featured Project</p>
-            <h3 class="feat-title">Agentic Travel Planner<br><span style="font-weight:400;color:var(--slate);">Phases 1 → 3</span></h3>
-            <div class="feat-desc">
-              An AI travel agent built iteratively — from a single-file bare-bones loop to a full
+            <h3 class="showcase-name">Agentic Travel Planner</h3>
+            <p class="showcase-sub">Phases 1 → 3 · From bare loop to production UI</p>
+            <p class="showcase-desc">
+              An AI travel agent built iteratively from a single-file bare-bones loop to a full
               FastAPI + React/Vite app with real-time SSE streaming. Demonstrates tool selection,
-              multi-turn memory, live web search, structured outputs, and the separation of agent logic
-              from system architecture. Part of a public "Agentic AI from First Principles" series.
-            </div>
-            <ul class="feat-tech">
-              <li>Python</li><li>FastAPI</li><li>React</li><li>Vite</li><li>OpenAI</li><li>Tavily</li>
-            </ul>
-            <div class="feat-links">
-              <a href="https://github.com/msdokania/agentic-ai-series" target="_blank" aria-label="GitHub">
-                <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              </a>
+              multi-turn memory, live web search, structured outputs, and the clean separation of
+              agent logic from system architecture.
+            </p>
+            <div class="showcase-tech">
+              <span>Python</span><span>FastAPI</span><span>React</span>
+              <span>Vite</span><span>OpenAI</span><span>Tavily</span>
             </div>
           </div>
+        </article>
 
-          <!-- ADD IMAGE/GIF: replace the placeholder block below with
-               <div class="feat-media">
-                 <img class="feat-media-img" src="travel-agent-demo.gif" alt="Travel agent UI" />
-               </div>                                                     -->
-          <div class="feat-media">
-            <div class="feat-media-placeholder">
-              <div class="feat-media-placeholder-inner">
-                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-                <!-- screenshot / gif -->
-              </div>
+        <!-- Project 3 -->
+        <article class="showcase-card reveal">
+          <div class="showcase-media">
+            <div class="showcase-img-placeholder">
+              <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              <!-- <span>Add screenshot or GIF here</span> -->
+              <!-- <code>replace this div with &lt;img class="showcase-img" src="screenshot.png" /&gt;</code> -->
             </div>
           </div>
-        </li>
-
-        <!-- ─ Project 3 ─────────────────────────────────── -->
-        <li class="featured-item reveal">
-          <div class="feat-text">
-            <p class="feat-label">Featured Project</p>
-            <h3 class="feat-title">Distributed Water Delivery Platform</h3>
-            <div class="feat-desc">
-              Production platform built as founding engineer at BLUSVN. High-throughput Golang
-              microservices (5K+ orders/sec via concurrent worker pools), 80+ tRPC/TypeScript APIs,
-              Kafka-based real-time location tracking, and AWS/EKS infrastructure with Terraform and
-              Karpenter. API latency reduced 40%; security compliance improved from 65% to 76%.
+          <div class="showcase-info">
+            <div class="showcase-meta">
+              <span class="showcase-tag-prod">Production</span>
             </div>
-            <ul class="feat-tech">
-              <li>Go</li><li>TypeScript</li><li>React</li><li>Kafka</li><li>PostgreSQL</li><li>AWS/EKS</li><li>Terraform</li>
-            </ul>
-          </div>
-
-          <!-- ADD IMAGE/GIF: replace the placeholder block below with
-               <div class="feat-media">
-                 <img class="feat-media-img" src="platform-screenshot.png" alt="Platform screenshot" />
-               </div>                                                     -->
-          <div class="feat-media">
-            <div class="feat-media-placeholder">
-              <div class="feat-media-placeholder-inner">
-                <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-                <!-- screenshot / gif -->
-              </div>
+            <h3 class="showcase-name">Distributed Water Delivery Platform</h3>
+            <p class="showcase-sub">BLUSVN Technologies · Founding Engineer</p>
+            <p class="showcase-desc">
+              Production platform I architected and built from the ground up. High-throughput Golang
+              microservices (50K+ orders/min), 80+ TypeScript APIs, Kafka-based real-time location
+              tracking, and AWS/EKS infrastructure with Terraform and Karpenter.
+              API latency ↓40% · Security compliance 65% → 76%.
+            </p>
+            <div class="showcase-tech">
+              <span>Go</span><span>TypeScript</span><span>React</span>
+              <span>Kafka</span><span>PostgreSQL</span><span>AWS/EKS</span><span>Terraform</span>
             </div>
           </div>
-        </li>
+        </article>
 
-      </ul>
+      </div>
+
+      <!-- ─ Other projects grid ───────────────────────────── -->
+      <div class="other-header reveal">
+        <span class="other-line"></span>
+        <span class="other-label">more projects</span>
+        <span class="other-line"></span>
+      </div>
+      <div class="mini-grid">
+
+        <div class="mini-card reveal">
+          <div class="mini-top">
+            <svg class="mini-folder" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <a href="https://github.com/msdokania/agentic-ai-series" target="_blank" aria-label="GitHub">
+              <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+          </div>
+          <h4 class="mini-name">Bare-Bones Agent Loop</h4>
+          <p class="mini-desc">Single-file LLM agent — no frameworks, just an API call, a loop, and plain Python tool functions. Foundation of the AI series.</p>
+          <div class="mini-tech"><span>Python</span><span>OpenAI API</span></div>
+        </div>
+
+        <div class="mini-card reveal">
+          <div class="mini-top">
+            <svg class="mini-folder" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <a href="https://github.com/msdokania" target="_blank" aria-label="GitHub">
+              <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+          </div>
+          <h4 class="mini-name">Multimodal Interview Coach</h4>
+          <p class="mini-desc">AI coaching tool handling audio and text, simulating real interview conditions with adaptive questions and structured feedback.</p>
+          <div class="mini-tech"><span>Python</span><span>LLM APIs</span><span>Multimodal</span></div>
+        </div>
+
+        <div class="mini-card reveal">
+          <div class="mini-top">
+            <svg class="mini-folder" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <a href="https://github.com/msdokania" target="_blank" aria-label="GitHub">
+              <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+          </div>
+          <h4 class="mini-name">EKS Cluster Optimization</h4>
+          <p class="mini-desc">Migrated production Kubernetes to Karpenter — faster provisioning, lower overhead, CVE compliance 65% → 76%.</p>
+          <div class="mini-tech"><span>Kubernetes</span><span>Karpenter</span><span>Terraform</span><span>AWS</span></div>
+        </div>
+
+      </div>
     </section>
 
-    <!-- ── OTHER PROJECT CARDS ───────────────────────────── -->
-    <div>
-      <div class="cards-header reveal">
-        <!-- <p class="cards-header-label">// other noteworthy work</p> -->
-        <h2 class="cards-header-title">More Things I've Built</h2>
-      </div>
-      <ul class="cards-grid">
-
-        <li class="card reveal">
-          <div class="card-top">
-            <div class="card-folder"><svg viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></div>
-            <div class="card-icons">
-              <a href="https://github.com/msdokania/agentic-ai-series" target="_blank" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
-            </div>
-          </div>
-          <h3 class="card-name">Bare-Bones Agent Loop</h3>
-          <p class="card-body">Single-file LLM agent — no frameworks, just an API call, a prompt, a loop, and plain Python tool functions. The foundation of the "Agentic AI from First Principles" series.</p>
-          <ul class="card-tech"><li>Python</li><li>OpenAI API</li></ul>
-        </li>
-
-        <li class="card reveal">
-          <div class="card-top">
-            <div class="card-folder"><svg viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></div>
-            <div class="card-icons">
-              <a href="https://github.com/msdokania" target="_blank" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
-            </div>
-          </div>
-          <h3 class="card-name">Multimodal Interview Coach</h3>
-          <p class="card-body">AI-powered coaching tool handling audio and text, simulating real interview conditions with adaptive follow-up questions and structured feedback.</p>
-          <ul class="card-tech"><li>Python</li><li>LLM APIs</li><li>Multimodal</li></ul>
-        </li>
-
-        <li class="card reveal">
-          <div class="card-top">
-            <div class="card-folder"><svg viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></div>
-            <div class="card-icons">
-              <a href="https://github.com/msdokania" target="_blank" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
-            </div>
-          </div>
-          <h3 class="card-name">EKS Cluster Optimization</h3>
-          <p class="card-body">Migrated production Kubernetes from Cluster Autoscaler to Karpenter — faster node provisioning, reduced infrastructure overhead, and a jump in CVE compliance from 65% to 76%.</p>
-          <ul class="card-tech"><li>Kubernetes</li><li>Karpenter</li><li>Terraform</li><li>AWS</li></ul>
-        </li>
-
-      </ul>
-    </div>
-
-    <!-- ── WRITING / AI SERIES ───────────────────────────── -->
+    <!-- ── WRITING ──────────────────────────────────────────── -->
     <section id="writing">
       <h2 class="section-heading reveal">Agentic AI Series</h2>
-      <p class="series-intro reveal">
-        Rebuilding LLM systems from scratch and documenting each step — no magic, no black boxes.
-        The goal is to understand what's actually happening before reaching for a framework.
+      <p class="writing-intro reveal">
+        Rebuilding LLM systems from scratch — no magic, no black boxes — and documenting every step.
         Published on <a href="https://linkedin.com/in/monalisa-dokania" target="_blank">LinkedIn</a>
         and <a href="https://github.com/msdokania/agentic-ai-series" target="_blank">GitHub</a>.
       </p>
-      <ul class="series-grid">
 
-        <li class="series-card reveal">
-          <span class="series-phase">Phase 1</span>
-          <h3 class="series-name">Bare-Bones Agent Loop</h3>
-          <p class="series-body">No frameworks. One file. LLM API + prompt + loop + Python functions. What is an agent, really?</p>
-          <span class="badge badge-done">Published</span>
-        </li>
-
-        <li class="series-card reveal">
-          <span class="series-phase">Phase 2</span>
-          <h3 class="series-name">Add Complexity Incrementally</h3>
-          <p class="series-body">Web search, live APIs, multi-turn memory, Gradio UI. Prompting, hallucination control, structured outputs.</p>
-          <span class="badge badge-done">Published</span>
-        </li>
-
-        <li class="series-card reveal">
-          <span class="series-phase">Phase 3</span>
-          <h3 class="series-name">Separate the Concerns</h3>
-          <p class="series-body">Same agent, split into FastAPI backend + React/Vite frontend. Agent logic and system architecture are independent decisions.</p>
-          <span class="badge badge-done">Published</span>
-        </li>
-
-        <li class="series-card reveal">
-          <span class="series-phase">Phase 4</span>
-          <h3 class="series-name">Introduce Frameworks</h3>
-          <p class="series-body">Rebuild with LangChain, then LangGraph for stateful multi-step workflows. Streaming, retries, rate limits.</p>
-          <span class="badge badge-wip">In Progress</span>
-        </li>
-
-        <li class="series-card reveal">
-          <span class="series-phase">Phase 5</span>
-          <h3 class="series-name">Retrieval Layer</h3>
-          <p class="series-body">Add RAG, vector DBs, and memory. Retrieval quality, context window management, Pydantic structured outputs.</p>
-          <span class="badge badge-soon">Coming Soon</span>
-        </li>
-
-        <li class="series-card reveal">
-          <span class="series-phase">Phase 6 → 7</span>
-          <h3 class="series-name">Multi-Agent + Multimodal</h3>
-          <p class="series-body">Specialized agents that coordinate — planner, researcher, reporter. Eval datasets, accuracy measurement, MCP.</p>
-          <span class="badge badge-soon">Coming Soon</span>
-        </li>
-
-      </ul>
+      <div class="series-table reveal">
+        <div class="series-row">
+          <div class="series-left"><span class="s-num">01</span><span class="badge badge-done">published</span></div>
+          <div class="series-right"><h4>Bare-Bones Agent Loop</h4><p>No frameworks. One file. LLM API + prompt + loop + Python functions. What is an agent, really?</p></div>
+        </div>
+        <div class="series-row">
+          <div class="series-left"><span class="s-num">02</span><span class="badge badge-done">published</span></div>
+          <div class="series-right"><h4>Add Complexity Incrementally</h4><p>Web search, live APIs, multi-turn memory, Gradio UI. Prompting, hallucination control, structured outputs.</p></div>
+        </div>
+        <div class="series-row">
+          <div class="series-left"><span class="s-num">03</span><span class="badge badge-done">published</span></div>
+          <div class="series-right"><h4>Separate the Concerns</h4><p>Same agent, split into FastAPI backend + React/Vite frontend. Agent logic and architecture are independent decisions.</p></div>
+        </div>
+        <div class="series-row">
+          <div class="series-left"><span class="s-num">04</span><span class="badge badge-wip">in progress</span></div>
+          <div class="series-right"><h4>Introduce Frameworks</h4><p>Rebuild with LangChain, then LangGraph. Streaming, retries, rate limits, error handling.</p></div>
+        </div>
+        <div class="series-row">
+          <div class="series-left"><span class="s-num">05</span><span class="badge badge-soon">soon</span></div>
+          <div class="series-right"><h4>Retrieval Layer</h4><p>RAG, vector DBs, memory. Retrieval quality, context window management, Pydantic outputs.</p></div>
+        </div>
+        <div class="series-row">
+          <div class="series-left"><span class="s-num">06–07</span><span class="badge badge-soon">soon</span></div>
+          <div class="series-right"><h4>Multi-Agent + Multimodal</h4><p>Specialized agents that coordinate — planner, researcher, reporter. Evals and MCP.</p></div>
+        </div>
+      </div>
     </section>
 
-    <!-- ── CONTACT ───────────────────────────────────────── -->
-    <section id="contact" style="counter-increment: none;">
-      <!-- <span class="contact-label">// 05. what's next?</span> -->
-      <h2>Get In Touch</h2>
-      <p>
-        I'm open to <strong>software engineering roles</strong> and <strong>research opportunities in AI systems</strong>.
-        Whether you want to talk distributed systems,
-        agentic pipelines, or anything in between — my inbox is always open.
-      </p>
-      <a class="contact-btn" href="mailto:msdokania@gmail.com">Say Hello</a>
+    <!-- ── CONTACT ──────────────────────────────────────────── -->
+    <section id="contact">
+      <div class="contact-wrap reveal">
+        <p class="contact-prompt"><span class="prompt">$</span> echo "what's next?"</p>
+        <h2 class="contact-heading">Get In Touch</h2>
+        <p class="contact-body">
+          I'm open to <strong>software engineering roles</strong> and
+          <strong>research opportunities in AI systems</strong>.
+          Whether you want to talk distributed systems, agentic pipelines,
+          or anything in between — my inbox is always open.
+        </p>
+        <a href="mailto:msdokania@gmail.com" class="contact-btn">Say Hello</a>
+      </div>
     </section>
 
   </main>
 
   <!-- ══ FOOTER ════════════════════════════════════════════ -->
   <footer>
-    <!-- <p><a href="https://github.com/msdokania" target="_blank">github.com/msdokania</a></p> -->
-    <p>Built by Monalisa Dokania &nbsp;·&nbsp; <a href="https://github.com/msdokania/msdokania.github.io" target="_blank">Source on GitHub</a></p>
+    <p>Built by Monalisa Dokania &nbsp;·&nbsp;
+      <a href="https://github.com/msdokania/msdokania.github.io" target="_blank">Source on GitHub</a>
+    </p>
     <p class="footer-note">Design inspired by <a href="https://brittanychiang.com" target="_blank">Brittany Chiang</a></p>
   </footer>
 
   <script>
-    // Nav shadow on scroll
+    // Nav shadow
     const nav = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 20);
     }, { passive: true });
 
-    // Experience tabs
+    // Tabs
     document.querySelectorAll('.exp-tab').forEach(btn => {
       btn.addEventListener('click', () => {
         document.querySelectorAll('.exp-tab').forEach(b => b.classList.remove('active'));
@@ -426,7 +447,7 @@
       entries.forEach(e => {
         if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
       });
-    }, { threshold: 0.08 });
+    }, { threshold: 0.07 });
     document.querySelectorAll('.reveal').forEach(el => io.observe(el));
   </script>
 </body>
