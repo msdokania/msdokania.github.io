@@ -398,6 +398,7 @@ section { padding: 100px 0; max-width: 900px; margin: 0 auto; }
 .t-val {
   color: var(--text-secondary);
   font-size: var(--fz-xs);
+  white-space: nowrap;
 }
 
 .t-cursor-line { margin-top: 10px; }
