@@ -964,3 +964,47 @@ footer a:hover { color: var(--teal); }
   .series-row:hover { margin: 0; padding: 18px 0; }
   .mini-grid { grid-template-columns: 1fr; }
 }
+
+
+/* ════════════════════════════════════════════════════════════
+   METRICS ROW
+════════════════════════════════════════════════════════════ */
+.metrics-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0 20px;
+}
+.metric-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-mid);
+  border-radius: var(--radius-md);
+  padding: 12px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 110px;
+  transition: var(--t);
+}
+.showcase-card:hover .metric-card {
+  border-color: var(--teal-border);
+}
+.metric-value {
+  font-family: var(--font-mono);
+  font-size: clamp(18px, 2.5vw, 20px);
+  font-weight: 600;
+  color: var(--teal);
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.metric-label {
+  font-family: var(--font-mono);
+  font-size: var(--fz-xxs);
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+}
+.wide-metric {
+  flex: 1.5;
+  min-width: 140px;
+}
