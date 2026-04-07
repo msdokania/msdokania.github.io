@@ -22,8 +22,5 @@ open index.html
 ```
 
 ---
-### Credits
 
-This portfolio is inspired by brittanychiang.com. 
-
-Design adapted and modified for personal use.
+Design inspired by brittanychiang.com. 

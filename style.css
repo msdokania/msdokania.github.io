@@ -638,3 +638,17 @@ footer a:hover { color: var(--green); }
     .featured-item:nth-child(even) .feat-links { justify-content: flex-start; }
     .featured-list { gap: 50px; }
 }
+
+/* FOOTER */
+.footer {
+  padding-top: 40px;
+  border-top: 1px solid var(--navy-lighter);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--slate);
+  line-height: 2;
+}
+
+.footer a { color: var(--teal); text-decoration: none; }
+.footer a:hover { color: var(--white); }
+.footer-note { color: var(--slate); opacity: 0.5; margin-top: 4px; }
