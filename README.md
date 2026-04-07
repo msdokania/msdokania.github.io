@@ -22,5 +22,5 @@ open index.html
 ```
 
 ---
-
+Built by Monalisa Dokania
 Design inspired by brittanychiang.com. 
