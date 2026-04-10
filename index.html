@@ -97,9 +97,9 @@ Licensed under the MIT License
             processing thousands of orders per second.
           </p>
           <p>
-            Alongside systems engineering, I've been building AI agents from first principles.
-            That work spans multi-agent pipelines, RAG systems, tools integration, and multimodal inputs —
-            all documented publicly as I go.
+            Alongside systems engineering, I've been building <strong>AI agents</strong> from first principles - from a bare Python loop 
+            working up to production-grade RAG systems with rigorous evaluation. My latest project is a <strong>Research Assistant</strong> 
+            with hybrid retrieval, cross-encoder re-ranking, and RAGAS-based evaluation.
           </p>
 
           <div class="skills-terminal">
@@ -119,12 +119,12 @@ Licensed under the MIT License
                 <span class="t-val">Python · Go · TypeScript · Java</span>
               </div>
               <div class="t-section">
-                <span class="t-key">infra    </span>
-                <span class="t-val">AWS · Kubernetes · Terraform · Docker</span>
+                <span class="t-key">devops    </span>
+                <span class="t-val">AWS · Kubernetes · CI/CD · Prometheus · Grafana · Terraform · Docker</span>
               </div>
               <div class="t-section">
                 <span class="t-key">ai/ml    </span>
-                <span class="t-val">LangChain · LangGraph · RAG · OpenAI · ML models</span>
+                <span class="t-val">LangChain · LangGraph · RAG · RAGAS · ChromaDB · OpenAI · ML models</span>
               </div>
               <div class="t-section">
                 <span class="t-key">backend  </span>
@@ -132,7 +132,7 @@ Licensed under the MIT License
               </div>
               <div class="t-section">
                 <span class="t-key">frontend </span>
-                <span class="t-val">React · Vite · Node.js</span>
+                <span class="t-val">React · Vite · Node.js · Next.js</span>
               </div>
               <div class="t-line t-cursor-line">
                 <span class="t-prompt">$</span>
@@ -423,7 +423,9 @@ Licensed under the MIT License
     <section id="writing">
       <h2 class="section-heading reveal">Agentic AI Series</h2>
       <p class="writing-intro reveal">
-        Building LLM agent systems from scratch — understanding the basic structure before adding frameworks, then layering complexity one decision at a time.
+        Building LLM agent systems from scratch — understanding the system before reaching for any framework, then tackling progressively 
+        harder problems that demand new techniques. Each phase is a complete project 
+        with documented learnings and measurable results.
         Published on <a href="https://linkedin.com/in/monalisa-dokania" target="_blank">LinkedIn</a>
         and <a href="https://github.com/msdokania/agentic-ai-series" target="_blank">GitHub</a>.
       </p>
@@ -439,19 +441,26 @@ Licensed under the MIT License
         </div>
         <div class="series-row">
           <div class="series-left"><span class="s-num">03</span><span class="badge badge-done">published</span></div>
-          <div class="series-right"><h4>Separate the Concerns</h4><p>Same agent, split into FastAPI backend + React/Vite frontend. Agent logic and architecture are independent decisions.</p></div>
+          <div class="series-right"><h4>Separate the Concerns</h4><p>Same agent, split into FastAPI backend + React/Vite frontend. Key insight: Agent logic and architecture are independent decisions.</p></div>
         </div>
         <div class="series-row">
           <div class="series-left"><span class="s-num">04</span><span class="badge badge-wip">in progress</span></div>
-          <div class="series-right"><h4>Introduce Frameworks</h4><p>Rebuild with LangChain, then LangGraph. Streaming, retries, rate limits, error handling. Comparing: what does the framework buy, and what does it cost in debuggability?</p></div>
+          <div class="series-right"><h4>Deep RAG: Research Assistant</h4><p>Production-grade document research assistant built in four 
+                  parts — naive baseline → advanced retrieval (hybrid 
+                  search, cross-encoder re-ranking, citation enforcement) → 
+                  RAGAS evaluation against 60 ground-truth Q&A pairs → 
+                  systematic prompt iteration with measured improvements. 
+                  LangChain, BM25, ChromaDB, RAGAS.</p></div>
         </div>
         <div class="series-row">
           <div class="series-left"><span class="s-num">05</span><span class="badge badge-soon">soon</span></div>
-          <div class="series-right"><h4>Retrieval Layer</h4><p>RAG, vector DBs, memory. Retrieval quality, context window management, Pydantic outputs.</p></div>
+          <div class="series-right"><h4>Agent Orchestration</h4><p>Multi-agent research system with LangGraph — planning, 
+              retrieval, synthesis, verification agents. Conditional 
+              routing, streaming, production error handling.</p></div>
         </div>
         <div class="series-row">
           <div class="series-left"><span class="s-num">06–07</span><span class="badge badge-soon">soon</span></div>
-          <div class="series-right"><h4>Multi-Agent + Multimodal</h4><p>Specialized agents that coordinate — planner, researcher, reporter. Evals and MCP.</p></div>
+          <div class="series-right"><h4>Multimodal Personal AI Companion</h4><p>Multimodal Input (audio, video, text) Processing & Persistent Memory - Personal AI assistant with emotional awareness, temporal reasoning, and proactive assistance.</p></div>
         </div>
       </div>
     </section>

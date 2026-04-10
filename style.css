@@ -324,7 +324,7 @@ section { padding: 100px 0; max-width: 900px; margin: 0 auto; }
 ════════════════════════════════════════════════════════════ */
 .about-grid {
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 3.3fr 1.7fr;
   gap: 56px;
   align-items: start;
 }
@@ -389,6 +389,7 @@ section { padding: 100px 0; max-width: 900px; margin: 0 auto; }
 
 .t-section {
   display: flex;
+  grid-template-columns: 120px 1fr;
   gap: 12px;
   padding: 2px 0;
 }
@@ -402,7 +403,7 @@ section { padding: 100px 0; max-width: 900px; margin: 0 auto; }
 .t-val {
   color: var(--text-secondary);
   font-size: var(--fz-xs);
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .t-cursor-line { margin-top: 10px; }
