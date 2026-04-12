@@ -284,6 +284,25 @@ section { padding: 100px 0; max-width: 900px; margin: 0 auto; }
 
 .hero-cta { display: flex; gap: 16px; margin-top: 44px; }
 
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
+  margin-left: 6px;
+}
+.social-icons svg {
+  width: 18px;
+  height: 18px;
+  stroke-width: 1.6;
+  fill: var(--text-secondary);
+  transition: 0.2s ease;
+}
+.social-icons a:hover svg {
+  color: var(--bg-hover);
+  transform: translateY(-2px);
+}
+
 .btn {
   padding: 14px 28px;
   border-radius: var(--radius);
@@ -937,8 +956,8 @@ footer p, footer a {
   letter-spacing: 0.06em;
   line-height: 2.2;
 }
-footer a:hover { color: var(--teal); }
-.footer-note { opacity: 0.45; }
+/* footer a:hover { color: var(--teal); } */
+.footer-note { opacity: 0.45; color: var(--text-dim); }
 
 /* ════════════════════════════════════════════════════════════
    SCROLL REVEAL
