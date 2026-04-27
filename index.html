@@ -31,8 +31,8 @@ Licensed under the MIT License
       <li><a href="#contact">Contact</a></li>
     </ol>
     <div class="nav-actions">
-      <a class="nav-resume" href="Resume_Monalisa_Dokania.pdf" target="_blank">Resume ↗</a>
-      <a class="nav-resume" href="monalisa_dokania_cv.pdf" target="_blank">CV ↗</a>
+      <a class="nav-resume" href="assets/Resume_Monalisa_Dokania.pdf" target="_blank">Resume ↗</a>
+      <a class="nav-resume" href="assets/monalisa_dokania_cv.pdf" target="_blank">CV ↗</a>
     </div>
   </nav>
 
@@ -157,7 +157,7 @@ Licensed under the MIT License
         <div class="about-photo">
           <a class="photo-frame" href="#">
             <!-- <div class="photo-placeholder"> -->
-            <img class="photo-img" src="photo.jpg" alt="Monalisa Dokania" />
+            <img class="photo-img" src="images/photo.jpg" alt="Monalisa Dokania" />
               <!-- <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> -->
               <!-- <span>// photo.jpg</span> -->
             </div>
@@ -220,7 +220,7 @@ Licensed under the MIT License
       <!-- ─ Featured: full showcase cards ─────────────────── -->
       <div class="showcase-list">
 
-        <!-- Project 3 --> <!-- ═══ BLUSVN Platform ═══ -->
+        <!-- Project 1 --> <!-- ═══ BLUSVN Platform ═══ -->
         <article class="showcase-card reveal">
           <div class="showcase-media">
             <img class="showcase-img" src="images/blusvn-apps.png" alt="BLUSVN customer ordering, driver dispatch, and real-time tracking" />
@@ -267,19 +267,89 @@ Licensed under the MIT License
           </div>
         </article>
 
+        <!-- ═══ Live Suggestions Copilot ═══ -->
+        <article class="showcase-card reveal">
+          <div class="showcase-media">
+            <img 
+              class="showcase-img" 
+              src="images/live-suggestions-demo.gif" 
+              alt="Live Suggestions Copilot demo showing transcript, AI suggestions, and streaming chat" 
+            />
+          </div>
+
+          <div class="showcase-info">
+            <div class="showcase-meta">
+              <span class="showcase-tag-featured">Featured</span>
+              <!-- <div class="showcase-links">
+                <a href="https://github.com/msdokania/live-suggestions-copilot" target="_blank" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                  </svg>
+                </a>
+              </div> -->
+              <div class="showcase-links">
+                <a href="https://live-suggestions-copilot.vercel.app/" target="_blank" aria-label="Live Demo">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <path d="M15 3h6v6"/>
+                    <path d="M10 14L21 3"/>
+                  </svg>
+                </a>
+                <a href="https://github.com/msdokania/live-suggestions-copilot" target="_blank" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="showcase-name">Live Suggestions Copilot</h3>
+            <p class="showcase-sub">Real-time AI meeting assistant · Transcription + contextual suggestions + streaming chat</p>
+
+            <p class="showcase-desc">
+              A real-time AI copilot that listens to live conversations, transcribes audio in 30-second chunks, 
+              and generates context-aware suggestions while the meeting is happening. The app surfaces questions, 
+              clarifications, talking points, answers, and fact-checks based on the conversation, while a 
+              streaming chat panel lets users ask deeper follow-up questions.
+            </p>
+
+            <div class="metrics-row">
+              <div class="metric-card">
+                <span class="metric-value">3</span>
+                <span class="metric-label">live suggestions</span>
+              </div>
+              <div class="metric-card">
+                <span class="metric-value">~1.0s</span>
+                <span class="metric-label">suggestion latency</span>
+              </div>
+              <div class="metric-card">
+                <span class="metric-value">30s</span>
+                <span class="metric-label">audio chunk cycle</span>
+              </div>
+              <div class="metric-card wide-metric">
+                <span class="metric-value">&lt;1s</span>
+                <span class="metric-label">chat first token latency</span>
+              </div>
+            </div>
+
+            <div class="showcase-tech">
+              <span>Next.js</span>
+              <span>TypeScript</span>
+              <span>Groq</span>
+              <span>Whisper</span>
+              <span>LLM Pipeline</span>
+              <span>Prompt Engineering</span>
+              <span>Streaming SSE</span>
+              <span>MediaRecorder API</span>
+              <span>Zustand</span>
+              <span>Tailwind</span>
+              <span>Vercel</span>
+            </div>
+          </div>
+        </article>
+
         <!-- Project 1 --> <!-- ═══ Multi-Agent Pipeline ═══ -->
         <article class="showcase-card reveal">
-          <!--
-            ════ HOW TO ADD A SCREENSHOT OR GIF ════
-            Replace <div class="showcase-img-placeholder"> with:
-
-                <img class="showcase-img" src="demo.gif" alt="Project demo" />
-              or
-                <img class="showcase-img" src="screenshot.png" alt="Screenshot" />
-
-            Recommended: 1200×675px (16:9) or any wider-than-tall image.
-            GIFs work great here — they autoplay inline.
-          -->
           <div class="showcase-media">
             <div class="arch-diagram-wrap">
               <svg viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg" class="arch-svg">
@@ -330,7 +400,7 @@ Licensed under the MIT License
           <div class="showcase-media"><img class="showcase-img" src="images/travel-planner-demo.gif" /></div>
           <div class="showcase-info">
             <div class="showcase-meta">
-              <span class="showcase-tag-featured">Featured</span>
+              <span></span>
               <div class="showcase-links">
                 <a href="https://github.com/msdokania/agentic-ai-series" target="_blank" aria-label="GitHub">
                   <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
